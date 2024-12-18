@@ -48,6 +48,29 @@ export default function PopularCategory() {
                     />
                 </div>
             </div>
+            <div className="grid grid-cols-3 gap-x-5 mt-4 px-5">
+                <div>
+                    <img
+                        src="https://cdn.dsmcdn.com/ty1615/tr-event-banner/611d8ea6-35f2-4038-9976-f70069addcf5tr_3210572.jpeg"
+                        alt=""
+                        className="hover:scale-105 rounded-xl transition-all"
+                    />
+                </div>
+                <div>
+                    <img
+                        src="https://cdn.dsmcdn.com/ty1608/pimWidgetApi/mobile_20241206081915_111111KadinMobile202412061101.jpg"
+                        alt=""
+                        className="hover:scale-105 rounded-xl transition-all"
+                    />
+                </div>
+                <div>
+                    <img
+                        src="https://cdn.dsmcdn.com/ty1608/pimWidgetApi/mobile_20241202180223_2866650KadinMobile202412021627.jpg"
+                        alt=""
+                        className="hover:scale-105 rounded-xl transition-all"
+                    />
+                </div>
+            </div>
         </div>
     )
 }
