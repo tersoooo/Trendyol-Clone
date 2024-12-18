@@ -5,8 +5,9 @@ import {IoMdStar, IoMdStarHalf} from "react-icons/io";
 import {IoMdHeartEmpty} from "react-icons/io";
 import {FaShippingFast} from "react-icons/fa";
 import PopulerCart from "./PopulerCart.jsx";
+import { IoFlash } from "react-icons/io5";
 
-export default function PopulerProducts() {
+export default function PopulerProducts({background, title, timer, titleColor, flash}) {
 
     var settings = {
         dots: false,
@@ -17,10 +18,30 @@ export default function PopulerProducts() {
     };
 
     return (
-        <div className="bg-[#efefef] h-[470px] text-sm rounded-xl">
+        <div
+            className={` h-[470px] text-sm rounded-xl 
+                ${background ? background : 'bg-[#efefef]'}`
+            }
+        >
             <div className="flex justify-between px-10">
-                <div>
-                    <h3 className="text-text-color text-lg py-4 font-semibold">Popüler Ürünler</h3>
+                <div className="flex items-center gap-x-10">
+                    <h3 className={`text-lg py-4 font-semibold flex gap-x-2 items-center 
+                        ${titleColor ? titleColor : 'text-text-color'}
+                    `}>
+                        {flash ? (
+                            <IoFlash className="text-[#ffc100]" />
+                        ) : null}
+                        {title ? title : 'Popüler Ürünler'}
+                    </h3>
+                    {timer ? (
+                        <div>
+                            <span className="p-2 text-balance rounded-xl font-bold bg-white">00</span>
+                            <span className="text-2xl px-2 text-white">:</span>
+                            <span className="p-2 text-balance rounded-xl font-bold bg-white">00</span>
+                            <span className="text-2xl px-2 text-white">:</span>
+                            <span className="p-2 text-balance rounded-xl font-bold bg-white">09</span>
+                        </div>
+                    ) : null}
                 </div>
                 <div className="flex items-center gap-x-1 ">
                     <div className="hover:bg-gray-200 flex p-1 rounded px-2 cursor-pointer">
@@ -29,7 +50,7 @@ export default function PopulerProducts() {
                     </div>
                 </div>
             </div>
-            <Slider {...settings} className="pb-10">
+            <Slider {...settings} className={`pb-10 ${background}`}>
                 <div>
                 <PopulerCart
                         title="Bershka"
