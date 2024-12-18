@@ -1,8 +1,17 @@
-# React + Vite
+# Trendyol Clone (Devam Ediyor)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is an ongoing project to clone the homepage of Trendyol using React and TailwindCSS.
 
-Currently, two official plugins are available:
+## 🌟 Current Features
+- Navbar completed
+- Homepage layout structure in progress
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Planned Features
+- Responsive design
+- Hover effects
+- Live deployment
+
+## 🛠 Technologies Used
+- React
+- Vite
+- TailwindCSS
