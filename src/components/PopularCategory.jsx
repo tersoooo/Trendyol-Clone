@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function PopularCategory() {
     return (
-        <div className="pt-24">
+        <div className="pt-24 pb-10">
             <h3 className="text-text-color font-bold text-xl pb-5">Popüler Kategoriler</h3>
             <div className="grid grid-cols-6">
                 <div className="w-[186px]">
