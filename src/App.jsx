@@ -3,6 +3,7 @@ import AllCategory from "./components/AllCategory.jsx";
 import Storys from "./components/Storys.jsx";
 import Banner from "./components/Banner.jsx";
 import PopulerProducts from "./components/PopulerProducts.jsx";
+import Article from "./components/Article.jsx";
 
 function App() {
 
@@ -13,6 +14,8 @@ function App() {
         <Storys />
         <Banner />
         <PopulerProducts />
+        <Article />
+
     </div>
   )
 }
