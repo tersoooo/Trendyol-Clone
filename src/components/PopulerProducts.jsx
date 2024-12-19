@@ -10,7 +10,7 @@ import { IoFlash } from "react-icons/io5";
 export default function PopulerProducts({background, title, timer, titleColor, flash}) {
 
     var settings = {
-        dots: true,
+        dots: false,
         infinite: true,
         autoplay: true,
         speed: 2000,
@@ -18,6 +18,7 @@ export default function PopulerProducts({background, title, timer, titleColor, f
         cssEase: "linear",
         slidesToShow: 5,
         slidesToScroll: 1,
+        centerPadding: "10px",
     };
 
     return (
@@ -53,7 +54,7 @@ export default function PopulerProducts({background, title, timer, titleColor, f
                     </div>
                 </div>
             </div>
-            <Slider {...settings} className={`pb-10 ${background}`}>
+            <Slider {...settings} className={`pb-10 flex justify-between items-center ${background}`}>
                 <div>
                 <PopulerCart
                         title="Bershka"
@@ -105,7 +106,7 @@ export default function PopulerProducts({background, title, timer, titleColor, f
                         point="4.7"
                     />
                 </div>
-                <div>
+                <div className="ml-3">
                     <PopulerCart
                         title="TEKSMODA"
                         title2="Çocuk Bornozu"

@@ -5,7 +5,7 @@ import {FaShippingFast} from "react-icons/fa";
 export default function PopulerCart({image,shipping = false, cash = false, title, point, price, title2}) {
     return (
         <div className="flex">
-            <h3 className="bg-white border flex flex-col px-2 gap-y-2 relative rounded-xl">
+            <div className="bg-white border flex flex-col relative rounded-xl">
                 <div className="flex flex-col ">
                     <img
                         src={image}
@@ -47,7 +47,7 @@ export default function PopulerCart({image,shipping = false, cash = false, title
                 <div>
                     <span className="text-primary-color font-bold text-balance">{price}</span>
                 </div>
-            </h3>
+            </div>
         </div>
     )
 }
