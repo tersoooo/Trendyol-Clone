@@ -10,9 +10,12 @@ import { IoFlash } from "react-icons/io5";
 export default function PopulerProducts({background, title, timer, titleColor, flash}) {
 
     var settings = {
-        dots: false,
+        dots: true,
         infinite: true,
-        speed: 500,
+        autoplay: true,
+        speed: 2000,
+        autoplaySpeed: 2000,
+        cssEase: "linear",
         slidesToShow: 5,
         slidesToScroll: 1,
     };
