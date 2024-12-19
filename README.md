@@ -1,4 +1,4 @@
-# Trendyol Clone (Devam Ediyor)
+# Trendyol Clone
 
 This is an ongoing project to clone the homepage of Trendyol using React and TailwindCSS.
 
@@ -15,3 +15,6 @@ This is an ongoing project to clone the homepage of Trendyol using React and Tai
 - React
 - Vite
 - TailwindCSS
+
+## LİVE
+https://trendyol-clone-five.vercel.app/
