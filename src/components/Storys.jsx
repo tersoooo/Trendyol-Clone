@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Storys() {
     return (
-        <div className="grid grid-cols-9 mt-10 pb-10">
+        <div className="grid grid-cols-3 md:grid-cols-9 mt-10 pb-10">
             <div className="group">
                 <a href="#"
                    className="font-semibold text-text-color text-sm group-hover:text-primary-color flex flex-col gap-y-2 items-center group">
