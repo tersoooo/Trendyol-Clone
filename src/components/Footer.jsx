@@ -42,8 +42,10 @@ export default function Footer() {
                         </li>
                     </ul>
                 </div>
-                <div className="mt-20">
-                    <h3 className="text-2xl font-bold flex items-center justify-center text-text-color pb-10 hover:text-primary-color cursor-pointer">Satıcı</h3>
+                <div className="mt-10">
+                    <h3 className="text-2xl font-bold flex items-center justify-center text-text-color pb-10 hover:text-primary-color cursor-pointer">
+                        Satıcı
+                    </h3>
                     <ul className="space-y-5 flex flex-col items-center">
                         <li>
                             <a href="#" className="text-sm font-Inter hover:text-primary-color">Trendyol'da Satış
