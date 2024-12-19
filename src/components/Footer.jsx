@@ -164,7 +164,7 @@ export default function Footer() {
                     </div>
                 </div>
                 <div>
-                    <h3 className="text-2xl -mt-6 font-bold text-text-color pb-5">
+                    <h3 className="text-2xl font-bold text-text-color pb-5">
                         Mobil Uygulamalar
                     </h3>
                     <div className="grid grid-cols-1 gap-y-5 md:grid-cols-3 md:gap-x-5 place-items-center">
