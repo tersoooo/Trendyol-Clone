@@ -4,7 +4,7 @@ import { useMediaQuery } from "react-responsive";
 
 export default function AllCategory() {
 
-    const isMobile = useMediaQuery({ maxWidth: 640 })
+    const isMobile = useMediaQuery({ maxWidth: 1280 })
 
 
     return (
@@ -14,10 +14,10 @@ export default function AllCategory() {
                         <div className="flex items-center gap-x-1">
                             <GiHamburgerMenu size={18}/>
                             <span
-                                className="text-sm font-semibold text-text-color cursor-pointer">TÜM KATEGORİLER</span>
+                                className="text-sm w-36 font-semibold text-text-color cursor-pointer">TÜM KATEGORİLER</span>
                         </div>
                         <div className="flex-1">
-                            <ul className="flex gap-x-4 text-sm">
+                            <ul className="flex lg:gap-x-4 text-sm ">
                                 <li>
                                     <a href="#"
                                        className="text-text-color font-semibold hover:text-primary-color">Kadın</a>

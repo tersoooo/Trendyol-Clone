@@ -2,8 +2,8 @@ import React from 'react'
 
 export default function FooterLegal() {
     return (
-        <div className="container mx-auto h-[47px] mt-10">
-            <div className="flex justify-between items-center h-full text-white text-sm">
+        <div className="container mx-auto h-[100px] lg:h-[47px] mt-10">
+            <div className="lg:flex lg:justify-between grid grid-cols-1 place-items-center h-full text-white text-sm">
                 <div>
                     <span className="">©2024 DSM Grup Danışmanlık İletişim ve Satış Tic. A.Ş. Her Hakkı Saklıdır.</span>
                 </div>

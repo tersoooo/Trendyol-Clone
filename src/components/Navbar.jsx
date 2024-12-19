@@ -9,11 +9,12 @@ import {IoIosFlash} from "react-icons/io";
 
 export default function Navbar() {
 
-    const isMobile = useMediaQuery({ maxWidth: 640 })
+    const isMobile = useMediaQuery({ maxWidth: 1024 })
+    const lg = useMediaQuery({ maxWidth: 1280 })
     const [isVisible, setIsVisible] = useState(false)
 
     return (
-        <div className="grid grid-cols-2 md:grid-cols-4 items-center">
+        <div className="grid grid-cols-2 lg:grid-cols-4 place-items-center">
             <div className="flex px-2 md:px-0">
                 <img src="https://cdn.dsmcdn.com/web/logo/ty-web.svg" alt=""
                      className="w-[146px] h-[100px] "
@@ -84,25 +85,49 @@ export default function Navbar() {
                 <>
                 <div className="col-span-2 relative">
                         <input type="text" placeholder="Aradığınız ürün, kategori veya markayı yazınız"
-                               className="w-[600px] bg-gray-100 py-2 px-4 rounded border-2 border-transparent focus:!border-primary-color outline-none transition-colors"
+                               className="xl:w-[600px] lg:w-[400px] bg-gray-100 py-2 px-4 rounded border-2 border-transparent focus:!border-primary-color outline-none transition-colors"
                         />
-                        <BiSearch className="absolute right-14 top-3 text-primary-color font-bold" size={23}/>
+                        <BiSearch className="absolute right-14 top-3 lg:right-3 text-primary-color font-bold" size={23}/>
 
                     </div>
-                    <div className="flex gap-x-7">
+                    <div className="flex lg:gap-x-7">
                         <div className="flex items-center gap-x-1 group">
-                            <FiUser className="group-hover:text-primary-color transition-colors"/>
-                            <a href="#" className="text-sm group-hover:text-primary-color transition-colors">Giriş
-                                Yap</a>
+                            {lg ? (
+                                <FiUser size={20} className="hover:text-primary-color cursor-pointer"/>
+                            ) : (
+                                <div className="flex items-center gap-x-1">
+                                    <FiUser className="group-hover:text-primary-color transition-colors"/>
+                                    <a href="#" className="text-sm group-hover:text-primary-color transition-colors">
+                                        Giriş Yap
+                                    </a>
+                                </div>
+                            )}
+
                         </div>
-                        <div className="flex items-center gap-x-1 group">
-                            <FaRegHeart className="group-hover:text-primary-color transition-colors"/>
-                            <a href="#"
-                               className="text-sm group-hover:text-primary-color transition-colors">Favorilerim</a>
+                        <div>
+                            {lg ? (
+                                <FaRegHeart size={20} className="hover:text-primary-color cursor-pointer" />
+                            ) : (
+                                <div className="flex items-center gap-x-1 group">
+                                    <FaRegHeart className="group-hover:text-primary-color transition-colors"/>
+                                    <a href="#"
+                                       className="text-sm group-hover:text-primary-color transition-colors">
+                                        Favorilerim
+                                    </a>
+                                </div>
+                            )}
+
                         </div>
-                        <div className="flex items-center gap-x-1 group">
-                            <SlBasket className="group-hover:text-primary-color transition-colors"/>
-                            <a href="#" className="text-sm group-hover:text-primary-color transition-colors">Sepetim</a>
+                        <div className="">
+                            {lg ? (
+                                <SlBasket size={20} className="hover:text-primary-color cursor-pointer"/>
+                            ) : (
+                                <div className="flex items-center gap-x-1 group">
+                                    <SlBasket className="group-hover:text-primary-color transition-colors"/>
+                                    <a href="#" className="text-sm group-hover:text-primary-color transition-colors">Sepetim</a>
+                                </div>
+                            )}
+
                         </div>
                     </div>
                 </>

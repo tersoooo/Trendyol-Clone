@@ -4,7 +4,7 @@ export default function PopularCategory() {
     return (
         <div className="pt-24 pb-10">
             <h3 className="text-text-color font-bold text-xl pb-5">Popüler Kategoriler</h3>
-            <div className="grid grid-cols-6">
+            <div className="grid place-items-center gap-y-2 grid-cols-2 md:grid-cols-4 lg:grid-cols-6">
                 <div className="w-[186px]">
                     <img
                         src="https://cdn.dsmcdn.com/marketing/datascience/automation/2023/1/3/Kazak_Kadin_202301031347.jpg"
@@ -48,7 +48,7 @@ export default function PopularCategory() {
                     />
                 </div>
             </div>
-            <div className="grid grid-cols-3 gap-x-5 mt-4 px-5">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-y-4 md:grid-cols-2 md:gap-x-5 lg:gap-x-5 mt-4 px-5">
                 <div>
                     <img
                         src="https://cdn.dsmcdn.com/ty1615/tr-event-banner/611d8ea6-35f2-4038-9976-f70069addcf5tr_3210572.jpeg"

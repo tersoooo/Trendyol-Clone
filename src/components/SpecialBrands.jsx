@@ -11,13 +11,27 @@ export default function SpecialBrands() {
         autoplay: true,
         speed: 2000,
         autoplaySpeed: 2000,
+        responsive: [
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    speed: 2000,
+                    autoplaySpeed: 2000,
+                    infinite: false,
+                    dots: false,
+                },
+            },
+        ],
     };
 
     return (
         <div>
-            <h3 className="text-text-color font-bold text-xl pb-5">Sana Özel Markalar</h3>
+            <h3 className="text-text-color font-bold text-xl pb-5 px-4 lg:px-0">Sana Özel Markalar</h3>
             <div className="slider-container">
-                <Slider {...settings}>
+                <Slider {...settings} key={window.innerWidth}>
                     <div>
                         <img
                             src="https://cdn.dsmcdn.com/marketing/datascience/automation/2023/2/13/Karaca_202302131917.jpg"

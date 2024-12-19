@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Banner() {
     return (
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-y-5 place-items-center md:gap-x-5 pb-10">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-y-5 place-items-center md:gap-x-5 pb-10">
             <div>
                 <a href="#">
                     <img

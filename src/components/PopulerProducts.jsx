@@ -18,13 +18,64 @@ export default function PopulerProducts({background, title, timer, titleColor, f
         cssEase: "linear",
         slidesToShow: 5,
         slidesToScroll: 1,
-        centerPadding: "10px",
         responsive: [
             {
                 breakpoint: 600,
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 2,
+                    infinite: false,
+                    dots: false,
+                    autoplay: true,
+                    speed: 3500,
+                    autoplaySpeed: 2000,
+                    cssEase: "linear",
+                },
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    infinite: false,
+                    dots: false,
+                    autoplay: true,
+                    speed: 3500,
+                    autoplaySpeed: 2000,
+                    cssEase: "linear",
+                },
+            },
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: false,
+                    dots: false,
+                    autoplay: true,
+                    speed: 3500,
+                    autoplaySpeed: 2000,
+                    cssEase: "linear",
+                },
+            },
+            {
+                breakpoint: 1280,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 4,
+                    infinite: false,
+                    dots: false,
+                    autoplay: true,
+                    speed: 3500,
+                    autoplaySpeed: 2000,
+                    cssEase: "linear",
+                },
+            },
+            {
+                breakpoint: 1536,
+                settings: {
+                    slidesToShow: 5,
+                    slidesToScroll: 5,
                     infinite: false,
                     dots: false,
                     autoplay: true,
@@ -44,7 +95,7 @@ export default function PopulerProducts({background, title, timer, titleColor, f
         >
             <div className="flex justify-between px-10">
                 <div className="flex items-center gap-x-10">
-                    <h3 className={`text-lg py-4 font-semibold flex gap-x-2 items-center 
+                    <h3 className={`text-balance py-4 font-semibold flex gap-x-2 items-center 
                         ${titleColor ? titleColor : 'text-text-color'}
                     `}>
                         {flash ? (
