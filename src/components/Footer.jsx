@@ -79,7 +79,7 @@ export default function Footer() {
                         </li>
                     </ul>
                 </div>
-                <div className="mt-20">
+                <div className="-mt-12">
                     <h3 className="text-2xl font-bold text-text-color pb-10 hover:text-primary-color cursor-pointer">
                         Sosyal Medya
                     </h3>
